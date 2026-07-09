@@ -1,7 +1,7 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs} from 'firebase/firestore/lite';
 const firebaseConfig = {
-  apiKey: "AIzaSyCpI8FQQV5e9F-Ne9uUN4zrIkofddhofSI",
+  apiKey: "${{ secrets.FIREBASE_API }}",
   authDomain: "modos-webos.firebaseapp.com",
   projectId: "modos-webos",
   storageBucket: "modos-webos.firebasestorage.app",
