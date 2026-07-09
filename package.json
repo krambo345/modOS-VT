@@ -9,7 +9,26 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/requirejs": "^2.1.37",
     "typescript": "~6.0.2",
     "vite": "^8.1.1"
-  }
+  },
+  "dependencies": {
+    "@zenfs/core": "^2.5.7",
+    "firebase": "^12.15.0",
+    "fs": "^0.0.1-security"
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krambo345/modOS-VT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krambo345/modOS-VT/issues"
+  },
+  "homepage": "https://github.com/krambo345/modOS-VT#readme"
 }
