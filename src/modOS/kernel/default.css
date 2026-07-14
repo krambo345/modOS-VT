@@ -4,9 +4,22 @@
   color: #fff;
   font-family: "Fira Code", monospace;
 }
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 .fira-code {
   font-family: "Fira Code", monospace;
   font-optical-sizing: auto;
   font-weight: 300px;
   font-style: normal;
+}
+.manifest { 
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-wrap: break-word;
+  cursor: none;
+  user-select: none;
 }
