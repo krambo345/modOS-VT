@@ -5,7 +5,7 @@ function apiLog(message:string){
 export const kernel = {
   system: {
     async sound(sound: string, times?: number) {
-      var s = new Audio(`assets/${sound}.mp3`);
+      var s = new Audio(`media/${sound}.mp3`);
       s.loop = false;
       var t = times ?? 1;
       for (let i = 0; i < t; i++) {
