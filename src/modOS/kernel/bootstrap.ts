@@ -54,10 +54,16 @@ export async function bootstrap() {
     await bootstraplog("Display display: " + display.style.display, "warning");
   }
   await bootstraplog(`bootstrapping ${variables.osName} ${variables.osVersion}`);
+    const check = await kernel.system.sound("test")
+    if (check != undefined){
+      bootstraplog(check, "error")
+      bootstraplog("", "error")
+      bootstraplog("If you wish to get the full experience of modOS, please fix the problem by enabling the setting for sound in your browser, removing an adblocker, or resolving the external factor.", "error")
+    }
   let i = 1;
   while (i <= 5) {
-    kernel.system.sound("beep");
     await bootstraplog(`Confirmation ${i}/5`);
+    await kernel.system.sound("beep")
     await delay(1000);
     i++;
   }

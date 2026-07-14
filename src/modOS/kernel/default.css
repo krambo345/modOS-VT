@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+:root {
+    --cursor-default: url("media/cursor/Normal Select.cur"), auto;
+    --cursor-pointer: url("media/cursor/Link Select.cur"), pointer;
+    --cursor-text: url("media/cursor/Text Select.cur"), text;
+    --cursor-help: url("media/cursor/Help Select.cur"), help;
+    --cursor-move: url("media/cursor/Move.cur"), move;
+    --cursor-wait: url("media/cursor/Busy.cur"), wait;
+    --cursor-progress: url("media/cursor/Working in Background.cur"), progress;
+    --cursor-not-allowed: url("media/cursor/Unavailable.cur"), not-allowed;
+}
 * {
   background-color: #000;
   color: #fff;
@@ -9,6 +19,16 @@ html, body{
   padding: 0;
   height: 100%;
   width: 100%;
+  cursor: url("media/cursor/Normal Select.cur"), auto;
+}
+a,
+button {
+    cursor: var(--cursor-pointer);
+}
+
+input,
+textarea {
+    cursor: var(--cursor-text);
 }
 .fira-code {
   font-family: "Fira Code", monospace;
