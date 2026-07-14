@@ -6,6 +6,3 @@ export async function packerLib() {
     kernel.bino.file.write("/cache/lib.json", JSON.stringify(lib))
     return JSON.stringify(lib);
 }
-export async function packerBuild(appID:string, rep?:URL) {
-    
-}
